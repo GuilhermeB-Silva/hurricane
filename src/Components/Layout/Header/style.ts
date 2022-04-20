@@ -1,4 +1,4 @@
-import { LightenDarkenColor } from "Core/Helpers/style/darkenOrLighter";
+import { LightenDarkenColor } from "Core/Helpers/StyleFormatter/darkenOrLighter";
 import styled from "styled-components";
 
 export const Container = styled.header`
