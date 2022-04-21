@@ -61,7 +61,6 @@ export const Container = styled.div`
 
     .content {
       width: 100%;
-      height: 700px;
       background: white;
 
       .content-filter {
@@ -74,10 +73,16 @@ export const Container = styled.div`
       }
       .content-products {
         width: 100%;
-        height: 500px;
+
         background: white;
         margin-top: 20px;
         border-radius: 10px;
+        padding: 30px;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        justify-items: center;
+        row-gap: 40px;
 
         box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
       }

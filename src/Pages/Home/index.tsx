@@ -5,8 +5,7 @@ import { Container } from "Core/Styles/Pages/Home";
 import banner from "Assets/banner.svg";
 import flagOff from "Assets/flag.svg";
 import { Footer } from "Components/Layout/Footer";
-
-// fakestoreapi.com/products
+import { ProductList } from "Components/Elements/ComponentsLIst/ProductsList";
 
 export function Home() {
   return (
@@ -27,11 +26,12 @@ export function Home() {
       <main>
         <div className="content">
           <div className="content-filter"></div>
-          <div className="content-products"></div>
+          <div className="content-products">
+            <ProductList />
+          </div>
         </div>
       </main>
 
-      {/* {state !== "unmounted" && <Welcome />} */}
       <Footer />
     </Container>
   );
